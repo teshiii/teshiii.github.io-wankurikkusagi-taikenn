@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div id="notification" class="notification" style="position: fixed; z-index: 1; width: 100%;">
+      <button id="delete" class="delete"></button>
+      ※これは詐欺体験のためのページであり、請求内容は架空のものです。
+    </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登録完了</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="hero is-$blue-invert is-fullheight">
+      <div id="app" class="hero-body">
+        <biv id="app" class="container">
+        <h1 class="title is-size-1">
+            登録完了
+        </h1>
+        <p class="is-size-2">お客様の館員登録が正常に完了しました。</p>
+        <p class="is-size-2 has-text-danger">期限以内に<span class="has-text-weight-bold">92000円</span>をお支払いください</p> 
+        <p class="is-size-2 has-text-danger">お支払いが確認できなかった場合は<span class="has-text-weight-bold">法的処置</span></p> 
+        <p class="is-size-2 has-text-danger">を取りますのでご注意ください。</p> 
+        <div class="notification is-danger">
+          <p class="is-size-1">残り{{ count }}秒</p>
+          <progress class="progress" max="100"></progress>
+        </div>
+        <section  class="section">
+          <div class="container">
+            <h2 class="is-size-1">お問い合わせ先</h2>
+          <table border="3">
+           <tr>
+               <td class="is-size-2">電話番号</td> <td class="is-size-2">XXX-XXX-XXX</td>
+           </tr>
+           <tr>
+               <td class="is-size-2">メールアドレス</td> <td class="is-size-2">XXX@gmail.com</td>
+           </tr>
+          </table>
+          <h2 class="is-size-1">お振込先</h2>
+        <table border="3">
+         <tr>
+             <td class="is-size-2">八草支店（XXX）</td> <td class="is-size-2">普通預金</td>
+         </tr>
+         <tr>
+             <td class="is-size-2">銀行番号XXXXXXX</td> <td class="is-size-2">こちらです。</td>
+         </tr>
+        </table>
+          </div>
+        </section>
+        <script type="text/javascript">
+          document.bgColor = "#ffdab9";
+      </script>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body> 
+</html>
