@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <div id="notification" class="notification" style="position: fixed; z-index: 1; width: 100%;">
-      <button id="delete" class="delete"></button>
-      ※これは詐欺体験のためのページであり、請求内容は架空のものです。
-    </div>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>登録完了</title>
@@ -14,6 +10,11 @@
     <section class="hero is-$blue-invert is-fullheight">
       <div id="app" class="hero-body">
         <biv id="app" class="container">
+          <div class="notification is-info">
+            <button class="delete"></button>
+            こちらはワンクリック詐欺の
+             <strong>体験</strong>ページです。ご注意ください。
+          </div>
         <h1 class="title is-size-1">
             登録完了
         </h1>
@@ -22,7 +23,7 @@
         <p class="is-size-2 has-text-danger">お支払いが確認できなかった場合は<span class="has-text-weight-bold">法的処置</span></p> 
         <p class="is-size-2 has-text-danger">を取りますのでご注意ください。</p> 
         <div class="notification is-danger">
-          <p class="is-size-1">残り{{ count }}秒</p>
+          <p class="is-size-1  has-text-centered">残り{{ count }}秒</p>
           <progress class="progress" max="100"></progress>
         </div>
         <section  class="section">
@@ -56,3 +57,6 @@
     <script type="text/javascript" src="index.js"></script>
   </body> 
 </html>
+<script>
+  alert("これはワンクリック詐欺の体験ページです。");
+</script>
